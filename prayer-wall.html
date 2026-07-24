@@ -1,0 +1,41 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="theme-color" content="#211739" />
+    <meta name="description" content="The shared prayer wall for Rock Eternal Church Life Group." />
+    <title>Prayer Wall · Rock Eternal Church Life Group</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&amp;family=Playfair+Display:ital,wght@0,600;0,700;1,600&amp;display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body class="page page-wall">
+    <main class="wall-page">
+      <header class="heart-header">
+        <a class="brand" href="index.html" aria-label="Rock Eternal Church Life Group home">
+          <span class="brand-mark"><img src="assets/rock-eternal-mark.png" alt="Rock Eternal Church mark" /></span>
+          <span>ROCK ETERNAL</span>
+        </a>
+        <div class="header-links">
+          <a class="quiet-link" href="admin.html">Leader sign in</a>
+          <a class="quiet-link" href="index.html">Share a request <span aria-hidden="true">→</span></a>
+        </div>
+      </header>
+
+      <section class="wall-intro" aria-labelledby="wall-title">
+        <p class="eyebrow accent">ROCK ETERNAL CHURCH LIFE GROUP</p>
+        <h1 id="wall-title">Prayer makes us<br /><em>one.</em></h1>
+        <p>Read a request, pause for a moment, and let your Life Group know you are praying.</p>
+      </section>
+
+      <section class="wall-list" id="prayer-wall-list" aria-live="polite" aria-label="Shared prayer requests">
+        <p class="loading-text">Gathering prayer requests…</p>
+      </section>
+      <p class="wall-error" id="wall-error" role="alert" aria-live="polite"></p>
+    </main>
+
+    <script src="wall.js"></script>
+  </body>
+</html>

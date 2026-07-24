@@ -1,0 +1,65 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="theme-color" content="#211739" />
+    <meta name="description" content="Leader dashboard for Rock Eternal Church Life Group prayer requests." />
+    <title>Leader Dashboard · Rock Eternal Church Life Group</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&amp;family=Playfair+Display:ital,wght@0,600;0,700;1,600&amp;display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body class="page page-admin">
+    <main class="admin-page">
+      <header class="heart-header">
+        <a class="brand" href="index.html" aria-label="Rock Eternal Church Life Group home">
+          <span class="brand-mark"><img src="assets/rock-eternal-mark.png" alt="Rock Eternal Church mark" /></span>
+          <span>ROCK ETERNAL</span>
+        </a>
+        <a class="quiet-link" href="prayer-wall.html">View Prayer Wall <span aria-hidden="true">→</span></a>
+      </header>
+
+      <section class="admin-login" id="admin-login" aria-labelledby="admin-login-title">
+        <p class="eyebrow accent">LEADER ACCESS</p>
+        <h1 id="admin-login-title">Prayer care<br /><em>starts here.</em></h1>
+        <p>Review requests privately before sharing them with the Life Group.</p>
+        <form id="leader-login-form">
+          <label for="leader-password">Leader password</label>
+          <input id="leader-password" type="password" autocomplete="current-password" required placeholder="Enter leader password" />
+          <p class="login-error" id="login-error" role="alert" aria-live="polite"></p>
+          <button class="send-button" type="submit"><span>Open Leader Dashboard</span></button>
+        </form>
+      </section>
+
+      <section class="admin-dashboard" id="admin-dashboard" hidden aria-labelledby="dashboard-title">
+        <div class="dashboard-intro">
+          <div>
+            <p class="eyebrow accent">LEADER DASHBOARD</p>
+            <h1 id="dashboard-title">Care for every<br /><em>request.</em></h1>
+          </div>
+          <button class="text-button" type="button" id="logout-button">Sign out</button>
+        </div>
+
+        <div class="summary-grid" id="summary-grid" aria-live="polite"></div>
+
+        <div class="dashboard-toolbar">
+          <div class="dashboard-filters" id="dashboard-filters">
+            <button type="button" class="filter-button is-active" data-status="all">All requests</button>
+            <button type="button" class="filter-button" data-status="pending">Needs review</button>
+            <button type="button" class="filter-button" data-status="published">Live</button>
+            <button type="button" class="filter-button" data-status="answered">Answered</button>
+            <button type="button" class="filter-button" data-status="archived">Archived</button>
+          </div>
+          <p id="dashboard-message" class="dashboard-message" role="status" aria-live="polite"></p>
+        </div>
+
+        <div class="admin-request-list" id="admin-request-list" aria-live="polite">
+          <p class="loading-text">Loading requests…</p>
+        </div>
+      </section>
+    </main>
+    <script src="admin.js"></script>
+  </body>
+</html>

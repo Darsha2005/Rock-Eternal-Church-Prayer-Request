@@ -1,0 +1,92 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="theme-color" content="#211739" />
+    <meta name="description" content="A private prayer request space for Rock Eternal Church Life Group." />
+    <title>Prayer Requests · Rock Eternal Church Life Group</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&amp;family=Playfair+Display:ital,wght@0,600;0,700;1,600&amp;display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body class="page page-request">
+    <main class="request-layout">
+      <section class="brand-panel" aria-labelledby="group-name">
+        <a class="brand" href="index.html" aria-label="Rock Eternal Church Life Group home">
+          <span class="brand-mark"><img src="assets/rock-eternal-mark.png" alt="Rock Eternal Church mark" /></span>
+          <span>ROCK ETERNAL</span>
+        </a>
+
+        <div class="brand-copy">
+          <p class="eyebrow">ROCK ETERNAL CHURCH LIFE GROUP · PRAYER ROOM</p>
+          <h1 id="group-name">There is room<br />for <em>your</em> prayer.</h1>
+          <p class="lead">Share what is on your heart. Your request will be held with love by the Rock Eternal Church Life Group.</p>
+        </div>
+
+        <div class="verse">
+          <span class="verse-line"></span>
+          <p>“Cast all your anxiety on Him because He cares for you.”</p>
+          <span>1 Peter 5:7</span>
+        </div>
+      </section>
+
+      <section class="form-panel" aria-labelledby="request-title">
+        <div class="form-shell">
+          <p class="eyebrow accent">A SAFE PLACE TO SHARE</p>
+          <h2 id="request-title">How can we pray<br />with you?</h2>
+          <p class="form-intro">Write freely. After you send your request, it will be placed inside a prayer heart.</p>
+
+          <form id="prayer-form" novalidate>
+            <div class="field-wrap">
+              <label for="name">Your name <span>(optional)</span></label>
+              <input id="name" name="name" type="text" autocomplete="name" placeholder="Enter your name" maxlength="70" />
+            </div>
+
+            <div class="field-wrap">
+              <label for="prayer">Your prayer request</label>
+              <textarea id="prayer" name="prayer" rows="7" required maxlength="1200" placeholder="Tell us what is on your heart…"></textarea>
+              <div class="field-footer">
+                <p class="error-message" id="form-error" role="alert" aria-live="polite"></p>
+                <span id="character-count">0 / 1200</span>
+              </div>
+            </div>
+
+            <div class="field-wrap compact-field">
+              <label for="category">Prayer category</label>
+              <select id="category" name="category">
+                <option value="health">Health &amp; healing</option>
+                <option value="family">Family &amp; relationships</option>
+                <option value="urgent">Urgent need</option>
+                <option value="praise">Praise report</option>
+                <option value="other" selected>Other</option>
+              </select>
+            </div>
+
+            <label class="consent-row" for="show-name">
+              <input id="show-name" name="show-name" type="checkbox" />
+              <span class="consent-box" aria-hidden="true">✓</span>
+              <span>Show my name with this request. Leave this unchecked to share anonymously.</span>
+            </label>
+
+            <label class="consent-row" for="share-consent">
+              <input id="share-consent" name="share-consent" type="checkbox" />
+              <span class="consent-box" aria-hidden="true">✓</span>
+              <span>I give permission for my request to be reviewed by a leader and shared with the Rock Eternal Church Life Group prayer wall.</span>
+            </label>
+
+            <button class="send-button" type="submit">
+              <span>Place in the prayer heart</span>
+              <svg aria-hidden="true" viewBox="0 0 24 24"><path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78L12 21.23l8.84-8.84a5.5 5.5 0 0 0 0-7.78Z" /></svg>
+            </button>
+          </form>
+
+          <p class="privacy-note"><span aria-hidden="true">✦</span> Every request is reviewed by a Life Group leader before it appears on the shared Prayer Wall.</p>
+        </div>
+      </section>
+    </main>
+
+    <script src="script.js"></script>
+  </body>
+</html>

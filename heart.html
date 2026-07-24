@@ -1,0 +1,79 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="theme-color" content="#211739" />
+    <meta name="description" content="Your prayer request has been placed in the Rock Eternal Church prayer heart." />
+    <title>Prayer Heart · Rock Eternal Church Life Group</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&amp;family=Playfair+Display:ital,wght@0,600;0,700;1,600&amp;display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body class="page page-heart">
+    <main class="heart-page">
+      <header class="heart-header">
+        <a class="brand" href="index.html" aria-label="Submit another prayer request">
+          <span class="brand-mark"><img src="assets/rock-eternal-mark.png" alt="Rock Eternal Church mark" /></span>
+          <span>ROCK ETERNAL</span>
+        </a>
+        <a class="quiet-link" href="index.html">Share another request <span aria-hidden="true">→</span></a>
+      </header>
+
+      <section class="heart-intro" aria-labelledby="heart-title">
+        <p class="eyebrow accent">ROCK ETERNAL CHURCH LIFE GROUP</p>
+        <h1 id="heart-title">Your prayer has<br />a place <em>here.</em></h1>
+        <p id="heart-subtitle">We are carrying this with you in faith.</p>
+      </section>
+
+      <section class="heart-stage" aria-label="Prayer heart">
+        <div class="sparkle sparkle-one" aria-hidden="true">✦</div>
+        <div class="sparkle sparkle-two" aria-hidden="true">✦</div>
+        <div class="sparkle sparkle-three" aria-hidden="true">✦</div>
+        <div class="sparkle sparkle-four" aria-hidden="true">✦</div>
+
+        <svg class="heart-shape" viewBox="0 0 640 590" role="presentation" aria-hidden="true">
+          <defs>
+            <linearGradient id="heart-gradient" x1="90" y1="30" x2="560" y2="560" gradientUnits="userSpaceOnUse">
+              <stop stop-color="#f7c984" />
+              <stop offset=".42" stop-color="#d68185" />
+              <stop offset="1" stop-color="#774774" />
+            </linearGradient>
+            <filter id="heart-glow" x="-20%" y="-20%" width="140%" height="140%">
+              <feGaussianBlur stdDeviation="13" />
+            </filter>
+          </defs>
+          <path class="heart-glow" d="M320 545C275 506 53 364 53 194 53 102 123 45 210 45c52 0 89 28 110 66 21-38 58-66 110-66 87 0 157 57 157 149 0 170-222 312-267 351Z" fill="#e8a080" filter="url(#heart-glow)" opacity=".34" />
+          <path d="M320 545C275 506 53 364 53 194 53 102 123 45 210 45c52 0 89 28 110 66 21-38 58-66 110-66 87 0 157 57 157 149 0 170-222 312-267 351Z" fill="url(#heart-gradient)" />
+          <path d="M320 518C280 480 83 351 83 199c0-72 54-122 126-122 48 0 88 29 111 76 23-47 63-76 111-76 72 0 126 50 126 122 0 152-197 281-237 319Z" fill="none" stroke="rgba(255,255,255,.28)" stroke-width="2" />
+        </svg>
+
+        <article class="prayer-note" id="prayer-note" aria-live="polite">
+          <div class="note-pin" aria-hidden="true"></div>
+          <p class="note-label" id="note-label">A PRAYER REQUEST</p>
+          <h2 id="note-name">Dear friend,</h2>
+          <p class="note-message" id="note-message">Your prayer will appear here.</p>
+          <div class="note-footer"><span id="note-footer-status">Held in prayer</span><span aria-hidden="true">✦</span></div>
+        </article>
+      </section>
+
+      <p class="heart-closing">“For where two or three gather in My name, there am I with them.” <span>Matthew 18:20</span></p>
+
+      <section class="group-preview" id="group-preview" aria-labelledby="group-preview-title">
+        <div class="section-heading">
+          <div>
+            <p class="eyebrow accent">PRAY TOGETHER</p>
+            <h2 id="group-preview-title">More needs from your <em>Life Group</em></h2>
+          </div>
+          <a class="wall-link" href="prayer-wall.html">Open Prayer Wall <span aria-hidden="true">→</span></a>
+        </div>
+        <div class="preview-list" id="recent-prayer-list" aria-live="polite">
+          <p class="loading-text">Gathering prayer requests…</p>
+        </div>
+      </section>
+    </main>
+
+    <script src="heart.js"></script>
+  </body>
+</html>
