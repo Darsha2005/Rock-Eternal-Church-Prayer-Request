@@ -7,7 +7,7 @@
 3. Right-click it and select **Run 'server'**.
 4. Open `http://localhost:8000` in your browser.
 
-The first time it runs, a secure local database is automatically created in `data/prayer_platform.db`.
+Before the first run, complete [GOOGLE_SHEETS_SETUP.md](GOOGLE_SHEETS_SETUP.md). It connects the platform to your own Google Sheet, where all prayer requests are stored.
 
 ## Leader Dashboard
 
@@ -37,6 +37,6 @@ Before sharing this website publicly, change that password in PyCharm:
 
 ## Sharing with the Life Group
 
-`localhost` works only on the computer running PyCharm. To send a link to phones and other computers, deploy this application to a Python hosting service with HTTPS and persistent storage. Do not use a static-only host such as Netlify Drop for this version.
+`localhost` works only on the computer running PyCharm. To send a link to phones and other computers, deploy this application to a Python hosting service with HTTPS. Your Google Sheet remains the shared data store, so you do not need a separate database.
 
 Prayer requests can contain sensitive personal information. Keep the Leader Dashboard password private, use leader approval before publishing, and only publish requests with the person's permission.
